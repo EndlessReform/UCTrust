@@ -72,11 +72,36 @@ nav {
 }
 #landing {
 	height: 100vh;
+	position: relative;
+
+	overflow: hidden;
+	/*
 	background-image: url(assets/uchicago-min.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	overflow: hidden;
+	*/
+}
+
+#landing:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url(assets/uchicago-min.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
 }
 
 .la-header {
