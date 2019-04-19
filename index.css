@@ -219,6 +219,7 @@ nav {
 }
 .bi-cardBox__bio {
 	display: inline-block;
+	position: relative;
 	border-right: 4px solid #1f161a;
 	border-bottom: 4px solid #1f161a;
 	max-width: 100%;
@@ -231,9 +232,17 @@ nav {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	/* height: ;*/
 	border-bottom: 4px solid #1f161a;
+	width: 100%;
 }
+
+.bi-heroImage:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+
 
 #bi-heroImage--dinesh {
 	background-image: url(assets/dinesh3-min.jpg);
@@ -266,12 +275,7 @@ nav {
 	color: maroon;
 }
 
-.bi-accordionTop {
-	/* height: calc(25vh - 4em);*/
-	border-bottom: 4px solid #1f161a;
-}
-
-.bi-accordionTop p {
+.bi-accordionTop__text {
 	font-family: "IBM Plex Serif", serif;
 	font-weight: 400;
 	font-size: 1.25em;
@@ -279,10 +283,11 @@ nav {
 }
 
 .bi-accordionBottom {
-	display: flex;
+	display: none;
 	align-items: center;
-	height: 5vh;
+	height: 2em;
 	padding: 0em 0em 0em .75em;
+	float: bottom;
 }
 
 .bi-accordionBottom__expand {
@@ -324,10 +329,6 @@ nav {
 @media screen and (min-width: 1080px) {
 	.bi-cardBox {
 		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.bi-heroImage {
-		height: calc(100vh / 3);
 	}
 }
 
@@ -394,12 +395,14 @@ nav {
 
 .is-card {
 	width: 90%;
+	height: 100%;
 	box-shadow: 1em 1em #1f151a;
 }
 
 .is-cardLight {
 	border: 3px solid #1f151a;
 	padding: 2em .75em .75em .75em;
+	height: calc(100% - 3em);
 }
 
 .is-cardDark {
