@@ -72,7 +72,7 @@ nav {
 }
 #landing {
 	height: 100vh;
-	background-image: url(assets/sandstorm.png);
+	background-image: url(assets/uchicago.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -228,22 +228,21 @@ nav {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 60vh;
+	/* height: ;*/
 	border-bottom: 4px solid #1f161a;
 }
 
 #bi-heroImage--dinesh {
-	background-image: url(assets/sanders.jpg);
-}
-
-#bi-heroImage--ruby{
-	background-image: url(assets/aoc.jpg);
+	background-image: url(assets/dinesh3.jpg);
 }
 
 #bi-heroImage--natalie{
-	background-image: url(assets/clinton.jpg);
+	background-image: url(assets/natalie.jpg);
 }
 
+#bi-heroImage--aazer{
+	background-image: url(assets/aazer2.jpg);
+}
 
 .bi-heroImage__header {
 	display: inline-block;
@@ -257,6 +256,7 @@ nav {
 	font-weight: 700;
 	font-size: 4em;
 	color: #fff4e1;
+	text-shadow: 1px 1px;
 }
 
 .bi-heroImage__header--outline{
@@ -264,7 +264,7 @@ nav {
 }
 
 .bi-accordionTop {
-	height: calc(25vh - 4em);
+	/* height: calc(25vh - 4em);*/
 	border-bottom: 4px solid #1f161a;
 }
 
@@ -298,12 +298,12 @@ nav {
 	text-shadow: 3px 3px maroon;
 }
 
-#bi-accordionBottom--ruby {
+#bi-accordionBottom--aazer {
 	background-color: #064789;
 	color: #fff4e1;
 }
 
-#bi-accordionBottom--ruby:hover {
+#bi-accordionBottom--aazer:hover {
 	background-color: #1f161a;
 	text-shadow: 3px 3px #064789;
 }
@@ -322,11 +322,19 @@ nav {
 	.bi-cardBox {
 		grid-template-columns: repeat(3, 1fr);
 	}
+
+	.bi-heroImage {
+		height: calc(100vh / 3);
+	}
 }
 
 @media screen and (max-width: 1080px) {
 	.bi-cardBox {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bi-heroImage {
+		height: calc(100vh / 2);
 	}
 }
 
@@ -338,9 +346,8 @@ nav {
 	.bi-heroImage__header {
 		font-size: 3em;
 	}
-
-	.bi-accordionTop {
-		height: 10em;
+	.bi-heroImage {
+		height: calc(100vh / 2);
 	}
 }
 
@@ -417,6 +424,7 @@ nav {
 
 .is-card__image {
 	overflow: hidden;
+	background-size: auto;
 	width: 100%;
 	margin: 1rem 0rem;
 }
@@ -424,7 +432,7 @@ nav {
 .is-cardLight__text {
 	font-family: "IBM Plex Serif", serif;
 	font-weight: 400;
-	font-size: 1.25em;
+	font-size: 1.125em;
 	padding: .25em 0em 1.5em 0em;
 }
 
@@ -434,12 +442,25 @@ nav {
 	}
 }
 @media screen and (max-width: 600px) {
+	.is-cardWrapper {
+		padding-left: .5em;
+		margin-right: 0vw;
+	}
+
 	.is-cardBox {
 		display: inline;
 	}
 
 	#issues__header {
 		font-size: 3em;
+	}
+
+	.is-cardBox {
+		padding-right: 0;
+	}
+
+	.is-cardLight__text {
+		font-size: 1.125em;
 	}
 }
 
