@@ -72,7 +72,7 @@ nav {
 }
 #landing {
 	height: 100vh;
-	background-image: url(assets/uchicago.jpg);
+	background-image: url(assets/uchicago-min.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -233,15 +233,15 @@ nav {
 }
 
 #bi-heroImage--dinesh {
-	background-image: url(assets/dinesh3.jpg);
+	background-image: url(assets/dinesh3-min.jpg);
 }
 
 #bi-heroImage--natalie{
-	background-image: url(assets/natalie.jpg);
+	background-image: url(assets/natalie-min.jpg);
 }
 
 #bi-heroImage--aazer{
-	background-image: url(assets/aazer2.jpg);
+	background-image: url(assets/aazer2-min.jpg);
 }
 
 .bi-heroImage__header {
@@ -424,7 +424,6 @@ nav {
 
 .is-card__image {
 	overflow: hidden;
-	background-size: auto;
 	width: 100%;
 	margin: 1rem 0rem;
 }
