@@ -19,12 +19,21 @@ nav {
 
 .nav-logo {
 	display: inline-block;
-	margin: .5rem 0rem 0rem .5rem;
+	margin: .25rem 0rem 0rem .75rem;
 }
 
 .nav-logo__img {
 	height: 3rem;
 	width: 3rem;
+}
+
+.nav-logo__header {
+	color: #fff4e1;
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	/* font-style: italic; */
+	font-size: 2.5em;
 }
 
 .nav-links {
@@ -268,7 +277,7 @@ nav {
 	font-weight: 700;
 	font-size: 4em;
 	color: #fff4e1;
-	text-shadow: 1px 1px;
+	text-shadow: 3px 3px maroon;
 }
 
 .bi-heroImage__header--outline{
