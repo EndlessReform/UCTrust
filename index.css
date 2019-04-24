@@ -407,19 +407,12 @@ nav {
 	width: 90%;
 	height: 100%;
 	box-shadow: 1em 1em #1f151a;
-}
-
-.is-cardLight {
 	border: 3px solid #1f151a;
 	padding: 2em .75em .75em .75em;
 	height: calc(100% - 3em);
 }
 
-.is-cardDark {
-	display: none;
-}
-
-.is-cardLight__header {
+.is-card__header {
 	font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 700;
 	font-style: italic;
@@ -427,11 +420,11 @@ nav {
 	margin-bottom: .33em;
 }
 
-.is-cardLight__divider {
+.is-card__divider {
 	width: 10%;
 }
 
-.is-cardLight__byline {
+.is-card__byline {
 	font-family: "IBM Plex Serif", serif;
 	font-weight: 700;
 	font-size: 1.5rem;
@@ -444,7 +437,7 @@ nav {
 	margin: 1rem 0rem;
 }
 
-.is-cardLight__text {
+.is-card__text {
 	font-family: "IBM Plex Serif", serif;
 	font-weight: 400;
 	font-size: 1.125em;
@@ -474,7 +467,7 @@ nav {
 		padding-right: 0;
 	}
 
-	.is-cardLight__text {
+	.is-card__text {
 		font-size: 1.125em;
 	}
 }
