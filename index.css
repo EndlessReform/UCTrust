@@ -12,7 +12,8 @@ nav {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-	background-color: #1f161a;
+	/* background-color: #1f161a;*/
+	background-color: #fff4e1;
 	overflow: hidden;
 	height: 4em;
 }
@@ -23,12 +24,11 @@ nav {
 }
 
 .nav-logo__img {
-	height: 3rem;
-	width: 3rem;
+	margin: 1rem 0rem;
+	height: 2.5rem;
 }
 
 .nav-logo__header {
-	color: #fff4e1;
 	font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -43,30 +43,30 @@ nav {
 }
 
 .nav-links__link {
-	color: /*#1f161a */#fff4e1;
 	font-size: 1.5rem;
 	font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 500;
 	text-decoration: none;
 	margin-right: 2em;
+	color: #1f161a;
 }
 
 .nav-links__link:hover {
-	text-shadow: .15em .15em maroon;
+	color: maroon;
 }
 
 .nav-links__link--priority {
 	border-style: solid;
 	border-width: .125em;
-	border-color: #fff4e1;
+	border-color: maroon;
 	padding: .1em .25em;
 	background-color: none;
-	color: #fff4e1;
+	color: maroon;
 }
 
 .nav-links__link--priority:hover {
-	background-color: #fff4e1;	
-	color: #1f161a;
+	background-color: maroon;	
+	color: #fff4e1;
 	text-shadow: none;
 }
 
