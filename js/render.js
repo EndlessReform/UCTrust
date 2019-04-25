@@ -15,6 +15,11 @@ var util = {
 		var line = document.createElement("hr");
 		line.className = className;
 		return line;
+	},
+	newDiv: function(className) {
+		var div = document.createElement("div");
+		div.className = className;
+		return div;
 	}
 };
 
@@ -23,6 +28,28 @@ var app = {
 		for (var key in obj) {
 			console.log(obj[key].text);
 		};
+	},
+	makeBio: function(candidate) {
+		var wrapper = util.newDiv("bi-card");
+
+		// Image portion
+		var heroImage = util.newDiv("bi-heroImage");
+		heroImage.appendChild(util.newElement("h1", "bi-heroImage__header", "Meet " + candidate.name));
+		heroImage.style.backgroundImage = "url('" + candidate.image + "')";
+		wrapper.appendChild(heroImage);
+
+		// Bio
+		var accordionTop = util.newDiv("bi-accordionTop");
+		accordionTop.appendChild(util.newElement("p","bi-accordionTop__text", candidate.text));
+		wrapper.appendChild(accordionTop);
+
+		return wrapper;
+	},
+	renderBios: function() {
+		var target = document.getElementsByClassName("bi-cardBox")[0];
+		Object.keys(candidates).forEach(function(key) {
+			target.appendChild(app.makeBio(candidates[key]));
+		});
 	},
 	makeIssue: function(issue) {
 		var children = [];
@@ -33,8 +60,7 @@ var app = {
 		children.push(util.newImg("is-card__image", issue.image));
 		children.push(util.newElement("p","is-card__text", issue.text));
 		
-		var wrapper = document.createElement("div");
-		wrapper.className = "is-card";
+		var wrapper = util.newDiv("is-card");
 		children.forEach(function(child) {
 			wrapper.appendChild(child);
 		});
@@ -50,9 +76,28 @@ var app = {
 		newIssues.forEach(function(child) {
 			target.appendChild(child);
 		});
+	},
+	makeStaff: function makeStaff(member) {
+		var wrapper = util.newDiv("me-card");
+		wrapper.appendChild(util.newImg("me-img", member.image));
+		
+		var info = util.newDiv("me-caption");
+		info.appendChild(util.newElement("h1", "me-caption__h1", member.name));
+		info.appendChild(util.newElement("h2", "me-caption__h2", member.title));
+
+		wrapper.appendChild(info);
+		return wrapper;
+	},
+	renderStaff: function() {
+		var target = document.getElementsByClassName("me-cardWrapper")[0];
+		Object.keys(staff).forEach(function(key) {
+			target.appendChild(app.makeStaff(staff[key]));
+		});
 	}
 };
 
 window.onload = function() {
+	app.renderBios();
 	app.renderIssues();
+	app.renderStaff();
 };

@@ -227,7 +227,7 @@ nav {
 	border-top: 4px solid #1f161a;
 	border-left: 4px solid #1f161a;
 }
-.bi-cardBox__bio {
+.bi-card {
 	display: inline-block;
 	position: relative;
 	border-right: 4px solid #1f161a;
