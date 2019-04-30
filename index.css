@@ -105,10 +105,11 @@ nav {
 	color: #fff4e1;
 }
 .la-header__header {
-	font-size: 4em;
+	font-size: 3em;
 	font-family: "IBM Plex Serif", sans-serif;
 	font-weight: 700;
 	font-style: italic;
+	text-shadow: 3px 3px maroon;
 }
 
 .la-header__divider {
@@ -120,7 +121,7 @@ nav {
 .la-header__text {
 	margin-bottom: 1em;
 
-	font-size: 2em;
+	font-size: 1.5em;
 	font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 300;
 
@@ -140,7 +141,7 @@ nav {
 .la-pointer__header {
 	font-family: "IBM Plex Serif", serif;
 	font-weight: 600;
-	font-size: 2.25em;
+	font-size: 2em;
 }
 
 .la-pointer__divider {
@@ -157,7 +158,7 @@ nav {
 	text-decoration: none;
 	font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 500;
-	font-size: 1.75em;
+	font-size: 1.5em;
 }
 
 .la-pointer__link:hover {
