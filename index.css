@@ -15,7 +15,7 @@ nav {
 	/* background-color: #1f161a;*/
 	background-color: #fff4e1;
 	overflow: hidden;
-	height: 4em;
+	height: 3em;
 }
 
 .nav-logo {
@@ -24,8 +24,8 @@ nav {
 }
 
 .nav-logo__img {
-	margin: 1rem 0rem;
-	height: 2.5rem;
+	margin: .5rem 0rem;
+	height: 2rem;
 }
 
 .nav-logo__header {
@@ -39,11 +39,11 @@ nav {
 .nav-links {
 	display: inline-block;
 	float: right;
-	margin: 1em 0em 0em 0em;
+	margin: .85em 0em 0em 0em;
 }
 
 .nav-links__link {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 500;
 	text-decoration: none;
@@ -173,6 +173,14 @@ nav {
 	.la-header {
 		max-width: 90vw;
 	}
+
+	.la-header__header {
+		font-size: 2.5em;
+	}
+
+	.la-pointer__link {
+		font-size: 1.25em;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -222,7 +230,7 @@ nav {
 	font-family: 'IBM Plex Serif', serif;
 	font-style: italic;
 	font-weight: 700;
-	font-size: 3em;
+	font-size: 2em;
 }
 
 .bi-cardBox {
@@ -274,12 +282,12 @@ nav {
 	position: absolute;
 	bottom: 0px;
 
-	padding: .2em .3em;
+	padding: .25em .5em;
 
 	font-family: "IBM Plex Serif", serif;
 	font-style: italic;
 	font-weight: 700;
-	font-size: 4em;
+	font-size: 3em;
 	color: #fff4e1;
 	text-shadow: 3px 3px maroon;
 }
@@ -291,8 +299,8 @@ nav {
 .bi-accordionTop__text {
 	font-family: "IBM Plex Serif", serif;
 	font-weight: 400;
-	font-size: 1.25em;
-	padding: .75em;
+	font-size: 1.125em;
+	padding: 1.25em;
 }
 
 .bi-accordionBottom {
@@ -372,7 +380,7 @@ nav {
 	font-family: "IBM Plex Serif", serif;
 	font-weight: 700;
 	font-style: italic;
-	font-size: 4em;
+	font-size: 3em;
 	color: #1f151a;
 	text-decoration: none;
 }
@@ -494,7 +502,7 @@ nav {
 	font-family: "IBM Plex Serif", serif;
 	font-weight: 700;
 	font-style: italic;
-	font-size: 3em;
+	font-size: 2.5em;
 	color: #fff4e1;
 }
 
@@ -551,7 +559,7 @@ nav {
 	font-family: "IBM Plex Serif";
 	font-weight: 700;
 	font-style: italic;
-	font-size: 4em;
+	font-size: 3em;
 
 }
 
@@ -565,10 +573,10 @@ nav {
 .me-card {
 	display: flex;
 	align-items: center;
-	width: 70%;
+	width: 80%;
 	height: 5em;
 
-	padding: 2em;
+	padding: 1em 1em;
 
 	background-color: #fff4e1;
 	color: #1f151a;
@@ -589,11 +597,13 @@ nav {
 	font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 700;
 	font-style: italic;
+	font-size: 1.5em;
 }
 
 .me-caption__h2 {
 	font-family: "IBM Plex Serif", serif;
 	font-weight: 500;
+	font-size: 1em;
 }
 @media screen and (min-width: 1080px) {
 	.me-cardWrapper {
