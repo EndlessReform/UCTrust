@@ -260,7 +260,7 @@ img {
 
 .is-cardBox {
 	display: grid;
-	grid-gap: 1.5em;
+	grid-gap: 3em;
 }
 
 .is-card {
