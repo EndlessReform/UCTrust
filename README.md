@@ -1,6 +1,6 @@
 # About
 
-[uctrust.us](https://www.uctrust.us) is the official campaign website for the Trust Coalition. This slate of three students ran for office in UChicago student government during the spring 2019 elections. 
+uctrust.us was the official campaign website for the Trust Coalition. This slate of three students ran for office in UChicago student government during the spring 2019 elections. Both the slate and URL are no longer in service. 
 
 # Style Guide
 
